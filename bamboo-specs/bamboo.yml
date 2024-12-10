@@ -3,7 +3,7 @@ version: 2
 plan:
   project-key: DOV
   key: DOVFOSSIELAARD
-  name: codelijst-fossielaarden
+  name: codelijst-fossielaard
 
 triggers:
   - polling: 130

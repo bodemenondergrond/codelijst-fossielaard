@@ -2,7 +2,7 @@
 version: 2
 plan:
   project-key: DOV
-  key: DOVBEMONSTERINGSTYPE
+  key: DOVFOSSIELAARD
   name: codelijst-fossielaarden
 
 triggers:
@@ -71,7 +71,7 @@ Release:
 ---
 version: 2
 plan:
-  key: DOV-DOVBEMONSTERINGSTYPE
+  key: DOV-DOVFOSSIELAARD
 
 plan-permissions:
   - groups:

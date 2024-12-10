@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:be.vlaanderen.bodemenondergrond.data.id.graph:codelijst-fossielaard">
+  <xs:simpleType name="be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/brakwaterfauna" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/brakwaterichnofossiel" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/fauna" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/flora" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/ichnofossiel" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/marienefauna" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/marienichnofossiel" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/onbepaald" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/zoetwaterfauna" />
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/zoetwaterichnofossiel" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

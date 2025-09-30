@@ -1,13 +1,12 @@
-uri,dc.identifier,collections,notation,prefLabel,altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf
-collectie:fossielaard,be.vlaanderen.bodemenondergrond.data.id.collection.fossielaard.fossielaard,,,Collectie van fossielaard.,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,
-brakwaterfauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterfauna,collectie:fossielaard,brakwaterfauna,brakwaterfauna,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-brakwaterichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterichnofossiel,collectie:fossielaard,brakwaterichnofossiel,brakwaterichnofossiel,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-fauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.fauna,collectie:fossielaard,fauna,fauna,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-flora,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.flora,collectie:fossielaard,flora,flora,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-ichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.ichnofossiel,collectie:fossielaard,ichnofossiel,ichnofossiel,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-marienefauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienefauna,collectie:fossielaard,marienefauna,mariene fauna,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-marienichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienichnofossiel,collectie:fossielaard,marienichnofossiel,marien ichnofossiel,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-onbepaald,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.onbepaald,collectie:fossielaard,onbepaald,onbepaald,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-zoetwaterfauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterfauna,collectie:fossielaard,zoetwaterfauna,zoetwaterfauna,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-zoetwaterichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterichnofossiel,collectie:fossielaard,zoetwaterichnofossiel,zoetwaterichnofossiel,,,,,,,,,,,,,conceptscheme:fossielaard,,,,,,,conceptscheme:fossielaard
-conceptscheme:fossielaard,be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard,,,Codelijst fossielaard.,,,,,,,Indicatie van fossielaard.,,,,,,,,,,,,,
+uri,dc.identifier,notation,prefLabel,definition,inScheme,topConceptOf
+conceptscheme:fossielaard,be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard,,lijst met soorten fossielen,"",,
+concept:brakwaterfauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterfauna,brakwaterfauna,brakwaterfauna,"Fossiel van dierlijke oorsprong uit een brakwateromgeving (bv. estuarium).",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:brakwaterichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterichnofossiel,brakwaterichnofossiel,brakwaterichnofossiel,"Sporenfossiel uit een brakwateromgeving.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:fauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.fauna,fauna,fauna,"Fossiel van dierlijke oorsprong.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:flora,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.flora,flora,flora,"Fossiel van plantaardige oorsprong.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:ichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.ichnofossiel,ichnofossiel,ichnofossiel,"Sporenfossiel.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:marienefauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienefauna,marienefauna,mariene fauna,"Fossiel van dierlijke oorsprong uit een mariene omgeving.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:marienichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienichnofossiel,marienichnofossiel,marien ichnofossiel,"Sporenfossiel uit een mariene omgeving.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:onbepaald,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.onbepaald,onbepaald,onbepaald,"Fossiel van onbepaalde oorsprong.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:zoetwaterfauna,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterfauna,zoetwaterfauna,zoetwaterfauna,"Fossiel van dierlijke oorsprong uit een zoetwateromgeving.",conceptscheme:fossielaard,conceptscheme:fossielaard
+concept:zoetwaterichnofossiel,be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterichnofossiel,zoetwaterichnofossiel,zoetwaterichnofossiel,"Sporenfossiel uit een zoetwateromgeving.",conceptscheme:fossielaard,conceptscheme:fossielaard

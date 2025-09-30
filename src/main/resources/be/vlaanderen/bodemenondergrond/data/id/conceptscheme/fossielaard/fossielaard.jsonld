@@ -391,30 +391,13 @@
     },
     "graph": [
         {
-            "id": "collectie:fossielaard",
-            "type": "skos:Collection",
-            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.collection.fossielaard.fossielaard",
-            "inScheme": "conceptscheme:fossielaard",
-            "member": [
-                "concept:brakwaterfauna",
-                "concept:brakwaterichnofossiel",
-                "concept:fauna",
-                "concept:flora",
-                "concept:ichnofossiel",
-                "concept:marienefauna",
-                "concept:marienichnofossiel",
-                "concept:onbepaald",
-                "concept:zoetwaterfauna",
-                "concept:zoetwaterichnofossiel"
-            ],
-            "prefLabel": "Collectie van fossielaard."
-        },
-        {
             "id": "concept:brakwaterfauna",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterfauna",
+            "definition": "Fossiel van dierlijke oorsprong uit een brakwateromgeving (bv. estuarium).",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "brakwaterfauna",
+            "note": "Fossiel van dierlijke oorsprong uit een brakwateromgeving (bv. estuarium).",
             "prefLabel": "brakwaterfauna",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -422,8 +405,10 @@
             "id": "concept:brakwaterichnofossiel",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterichnofossiel",
+            "definition": "Sporenfossiel uit een brakwateromgeving.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "brakwaterichnofossiel",
+            "note": "Sporenfossiel uit een brakwateromgeving.",
             "prefLabel": "brakwaterichnofossiel",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -431,8 +416,10 @@
             "id": "concept:fauna",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.fauna",
+            "definition": "Fossiel van dierlijke oorsprong.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "fauna",
+            "note": "Fossiel van dierlijke oorsprong.",
             "prefLabel": "fauna",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -440,8 +427,10 @@
             "id": "concept:flora",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.flora",
+            "definition": "Fossiel van plantaardige oorsprong.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "flora",
+            "note": "Fossiel van plantaardige oorsprong.",
             "prefLabel": "flora",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -449,8 +438,10 @@
             "id": "concept:ichnofossiel",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.ichnofossiel",
+            "definition": "Sporenfossiel.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "ichnofossiel",
+            "note": "Sporenfossiel.",
             "prefLabel": "ichnofossiel",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -458,8 +449,10 @@
             "id": "concept:marienefauna",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienefauna",
+            "definition": "Fossiel van dierlijke oorsprong uit een mariene omgeving.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "marienefauna",
+            "note": "Fossiel van dierlijke oorsprong uit een mariene omgeving.",
             "prefLabel": "mariene fauna",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -467,8 +460,10 @@
             "id": "concept:marienichnofossiel",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienichnofossiel",
+            "definition": "Sporenfossiel uit een mariene omgeving.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "marienichnofossiel",
+            "note": "Sporenfossiel uit een mariene omgeving.",
             "prefLabel": "marien ichnofossiel",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -476,8 +471,10 @@
             "id": "concept:onbepaald",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.onbepaald",
+            "definition": "Fossiel van onbepaalde oorsprong.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "onbepaald",
+            "note": "Fossiel van onbepaalde oorsprong.",
             "prefLabel": "onbepaald",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -485,8 +482,10 @@
             "id": "concept:zoetwaterfauna",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterfauna",
+            "definition": "Fossiel van dierlijke oorsprong uit een zoetwateromgeving.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "zoetwaterfauna",
+            "note": "Fossiel van dierlijke oorsprong uit een zoetwateromgeving.",
             "prefLabel": "zoetwaterfauna",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -494,8 +493,10 @@
             "id": "concept:zoetwaterichnofossiel",
             "type": "skos:Concept",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterichnofossiel",
+            "definition": "Sporenfossiel uit een zoetwateromgeving.",
             "inScheme": "conceptscheme:fossielaard",
             "notation": "zoetwaterichnofossiel",
+            "note": "Sporenfossiel uit een zoetwateromgeving.",
             "prefLabel": "zoetwaterichnofossiel",
             "topConceptOf": "conceptscheme:fossielaard"
         },
@@ -503,7 +504,6 @@
             "id": "conceptscheme:fossielaard",
             "type": "skos:ConceptScheme",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard",
-            "definition": "Indicatie van fossielaard.",
             "hasTopConcept": [
                 "concept:brakwaterfauna",
                 "concept:brakwaterichnofossiel",
@@ -516,8 +516,7 @@
                 "concept:zoetwaterfauna",
                 "concept:zoetwaterichnofossiel"
             ],
-            "note": "Indicatie van fossielaard.",
-            "prefLabel": "Codelijst fossielaard."
+            "prefLabel": "lijst met soorten fossielen"
         }
     ]
 }

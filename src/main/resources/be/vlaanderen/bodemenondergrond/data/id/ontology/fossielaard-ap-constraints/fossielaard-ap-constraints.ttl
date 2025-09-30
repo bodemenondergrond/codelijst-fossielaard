@@ -3,21 +3,21 @@
 @prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix beo_dataset:   <https://data.bodemenondergrond.vlaanderen.be/id/dataset/> .
 @prefix dct:           <http://purl.org/dc/terms/> .
 @prefix sh:            <http://www.w3.org/ns/shacl#> .
+@prefix beo_dataset:   <https://data.bodemenondergrond.vlaanderen.be/id/dataset/> .
 @prefix beo_ont:       <https://data.bodemenondergrond.vlaanderen.be/id/ontology/> .
+@prefix beo_ns:        <https://data.bodemenondergrond.vlaanderen.be/id/nodeshape/> .
 @prefix beo_ag_cl:     <https://data.bodemenondergrond.vlaanderen.be/id/person/codelijst/> .
 @prefix beo_voc:       <https://data.bodemenondergrond.vlaanderen.be/ns/> .
 @prefix vl_org:        <http://data.vlaanderen.be/id/organisatie/> .
 @prefix xkos:          <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix omg_ps:        <https://data.bodemenondergrond.vlaanderen.be/id/propertyshape/> .
+@prefix beo_ps:        <https://data.bodemenondergrond.vlaanderen.be/id/propertyshape/> .
 @prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ons:           <https://data.bodemenondergrond.vlaanderen.be/id/nodeshape/> .
 @prefix schema:        <http://schema.org/> .
 @prefix foaf:          <http://xmlns.com/foaf/0.1/> .
-@prefix dcat:     <http://www.w3.org/ns/dcat#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix dc:            <http://purl.org/dc/elements/1.1/>.
 
 beo_ont:fossielaard
     a               owl:Ontology ;
@@ -50,54 +50,48 @@ beo_ag_cl:creator
     foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>.
 
 # Node Shapes
-ons:schema
+beo_ns:schema
     a                sh:NodeShape ;
-    rdfs:label       "conceptschema van matrices"@en ;
-    sh:name          "conceptschema van matrices"@en ;
-    sh:description   "Het schema waarbinnen de matrices gedefinieerd zijn"@en ;
+    rdfs:label       "conceptschema van fossielaard"@en ;
+    sh:name          "conceptschema van fossielaard"@en ;
+    sh:description   "Het schema waarbinnen de fossielaard gedefinieerd zijn"@en ;
     rdfs:isDefinedBy beo_ont:fossielaard, beo_voc:fossielaard ;
-    sh:property      omg_ps:conceptscheme_prefLabel, omg_ps:schema_hasTopConcept, omg_ps:dc_identifier, omg_ps:notation, omg_ps:note,
-                     omg_ps:definition, omg_ps:rdf_type;
+    sh:property      beo_ps:conceptscheme_prefLabel, beo_ps:schema_hasTopConcept, beo_ps:dc_identifier, beo_ps:notation, beo_ps:note,
+                     beo_ps:definition, beo_ps:rdf_type;
     sh:closed true ;
     sh:targetClass   skos:ConceptScheme .
 
-
-
-ons:collection
+beo_ns:collection
     a                sh:NodeShape ;
     rdfs:label       "verzameling"@en ;
     sh:name          "verzameling"@en ;
-    sh:description   "Verzamelingen bundelen matrices met gelijkaardige eigenschappen, analysemethoden of matrices waarin ze gemeten worden."@en ;
+    sh:description   "Verzamelingen bundelen fossielaard met gelijkaardige eigenschappen."@en ;
     rdfs:isDefinedBy beo_ont:fossielaard, beo_voc:fossielaard ;
-    sh:property      omg_ps:prefLabel, omg_ps:collection_member, omg_ps:dc_identifier, omg_ps:notation,
-                     omg_ps:inScheme, omg_ps:rdf_type;
+    sh:property      beo_ps:prefLabel, beo_ps:collection_member, beo_ps:dc_identifier, beo_ps:notation,
+                     beo_ps:inScheme, beo_ps:rdf_type;
     sh:closed true ;
     sh:targetClass   skos:Collection .
 
-
-
-ons:concept
+beo_ns:concept
     a                sh:NodeShape ;
     rdfs:label       "matrix"@en ;
     sh:name          "matrix"@en ;
     sh:description   "analysemethodes"@en ;
     rdfs:comment     "compendia onderhouden door VITO"@en ;
     rdfs:isDefinedBy beo_ont:fossielaard, beo_voc:fossielaard ;
-    sh:property      omg_ps:notation, omg_ps:inScheme,
-                     omg_ps:references, omg_ps:definition,
-                     omg_ps:prefLabel, omg_ps:theme,
-                     omg_ps:topConceptOf, omg_ps:altLabel, omg_ps:dc_identifier,
-                     omg_ps:rdf_type, omg_ps:note, omg_ps:broaderTransitive, omg_ps:broader,
-                     omg_ps:narrowerTransitive, omg_ps:narrower, omg_ps:semanticRelation ,
-                     omg_ps:seeAlso;
+    sh:property      beo_ps:notation, beo_ps:inScheme,
+                     beo_ps:references, beo_ps:definition,
+                     beo_ps:prefLabel, beo_ps:theme,
+                     beo_ps:topConceptOf, beo_ps:altLabel, beo_ps:dc_identifier,
+                     beo_ps:rdf_type, beo_ps:note, beo_ps:broaderTransitive, beo_ps:broader,
+                     beo_ps:narrowerTransitive, beo_ps:narrower, beo_ps:semanticRelation ,
+                     beo_ps:seeAlso;
     sh:closed true ;
     sh:targetClass   skos:Concept .
 
-
-
 # Property Shapes
 
-omg_ps:rdf_type
+beo_ps:rdf_type
     a                sh:PropertyShape ;
     rdfs:label       "rdf type"@en ;
     sh:name          "rdf type"@en ;
@@ -108,7 +102,7 @@ omg_ps:rdf_type
     sh:nodeKind      sh:IRI ;
     sh:path          rdf:type .
 
-omg_ps:seeAlso
+beo_ps:seeAlso
     a                sh:PropertyShape ;
     rdfs:label       "zie ook"@en ;
     sh:name          "zie ook"@en ;
@@ -118,7 +112,7 @@ omg_ps:seeAlso
     sh:nodeKind      sh:IRI ;
     sh:path          rdfs:seeAlso .
 
-omg_ps:topConceptOf
+beo_ps:topConceptOf
     a                sh:PropertyShape ;
     rdfs:label       "topconcept van"@en ;
     sh:name          "topconcept van"@en ;
@@ -130,7 +124,7 @@ omg_ps:topConceptOf
     sh:path          skos:topConceptOf .
 
 
-omg_ps:theme
+beo_ps:theme
     a                sh:PropertyShape ;
     rdfs:label       "thema"@en ;
     sh:name          "thema"@en ;
@@ -139,7 +133,7 @@ omg_ps:theme
     sh:nodeKind      sh:IRI ;
     sh:path          dcat:theme .
 
-omg_ps:semanticRelation
+beo_ps:semanticRelation
     a                sh:PropertyShape ;
     rdfs:label       "gerelateerd concept"@en ;
     sh:name          "gerelateerd concept"@en ;
@@ -148,7 +142,7 @@ omg_ps:semanticRelation
     sh:nodeKind      sh:IRI ;
     sh:path          skos:semanticRelation; .
 
-omg_ps:narrower
+beo_ps:narrower
     a                sh:PropertyShape ;
     rdfs:label       "specifieker concept"@en ;
     sh:name          "specifieker concept"@en ;
@@ -158,7 +152,7 @@ omg_ps:narrower
     sh:nodeKind      sh:IRI ;
     sh:path          skos:narrower .
 
-omg_ps:narrowerTransitive
+beo_ps:narrowerTransitive
     a                sh:PropertyShape ;
     rdfs:label       "specifieker concept"@en ;
     sh:name          "specifieker concept"@en ;
@@ -168,7 +162,7 @@ omg_ps:narrowerTransitive
     sh:nodeKind      sh:IRI ;
     sh:path          skos:narrowerTransitive .
 
-omg_ps:broader
+beo_ps:broader
     a                sh:PropertyShape ;
     rdfs:label       "breder concept"@en ;
     sh:name          "breder concept"@en ;
@@ -179,7 +173,7 @@ omg_ps:broader
     sh:nodeKind      sh:IRI ;
     sh:path          skos:broader .
 
-omg_ps:broaderTransitive
+beo_ps:broaderTransitive
     a                sh:PropertyShape ;
     rdfs:label       "breder concept"@en ;
     sh:name          "breder concept"@en ;
@@ -189,7 +183,7 @@ omg_ps:broaderTransitive
     sh:nodeKind      sh:IRI ;
     sh:path          skos:broaderTransitive .
 
-omg_ps:topConceptOf
+beo_ps:topConceptOf
     a                sh:PropertyShape ;
     rdfs:label       "topconcept van"@en ;
     sh:name          "topconcept van"@en ;
@@ -200,7 +194,7 @@ omg_ps:topConceptOf
     sh:nodeKind      sh:IRI ;
     sh:path          skos:topConceptOf .
 
-omg_ps:altLabel
+beo_ps:altLabel
     a                sh:PropertyShape ;
     rdfs:label       "alternatief label"@en ;
     sh:name          "alternatief label"@en ;
@@ -211,7 +205,7 @@ omg_ps:altLabel
     sh:nodeKind      sh:Literal ;
     sh:path          skos:altLabel .
 
-omg_ps:collection_member
+beo_ps:collection_member
     a                sh:PropertyShape ;
     rdfs:label       "onderdeel"@en ;
     sh:name          "onderdeel"@en ;
@@ -222,9 +216,7 @@ omg_ps:collection_member
     sh:nodeKind      sh:IRI ;
     sh:path          skos:member .
 
-
-
-omg_ps:exactMatch
+beo_ps:exactMatch
     a                sh:PropertyShape ;
     rdfs:label       "heeft exacte overeenkomst"@en ;
     sh:name          "heeft exacte overeenkomst"@en ;
@@ -233,7 +225,7 @@ omg_ps:exactMatch
     sh:nodeKind      sh:IRI ;
     sh:path          skos:exactMatch .
 
-omg_ps:notation
+beo_ps:notation
     a                sh:PropertyShape ;
     rdfs:label       "notatie"@en ;
     sh:name          "notatie"@en ;
@@ -241,10 +233,10 @@ omg_ps:notation
     rdfs:isDefinedBy beo_ont:fossielaard, beo_voc:fossielaard ;
     sh:datatype      xsd:string ;
     sh:nodeKind      sh:Literal ;
-    sh:property      omg_ps:unique_notation ;
+    sh:property      beo_ps:unique_notation ;
     sh:path          skos:notation .
 
-omg_ps:unique_notation
+beo_ps:unique_notation
     a                  sh:PropertyShape ;
     rdfs:label         "unieke notatie"@en ;
     sh:name            "unieke notatie"@en ;
@@ -256,7 +248,7 @@ omg_ps:unique_notation
     sh:minCount        1 ;
     sh:maxCount        1 .
 
-omg_ps:schema_hasTopConcept
+beo_ps:schema_hasTopConcept
     a                sh:PropertyShape ;
     rdfs:label       "heeft topconcept"@en ;
     sh:name          "heeft topconcept"@en ;
@@ -267,8 +259,7 @@ omg_ps:schema_hasTopConcept
     sh:nodeKind      sh:IRI ;
     sh:path          skos:hasTopConcept .
 
-
-omg_ps:references
+beo_ps:references
     a                sh:PropertyShape ;
     rdfs:label       "wordt vermeld in"@en ;
     sh:name          "wordt vermeld in"@en ;
@@ -277,7 +268,7 @@ omg_ps:references
     sh:nodeKind      sh:IRI ;
     sh:path          dct:references .
 
-omg_ps:definition
+beo_ps:definition
     a                sh:PropertyShape ;
     rdfs:label       "definitie"@en ;
     sh:name          "definitie"@en ;
@@ -289,7 +280,7 @@ omg_ps:definition
     sh:nodeKind      sh:Literal ;
     sh:path          skos:definition .
 
-omg_ps:note
+beo_ps:note
     a                sh:PropertyShape ;
     rdfs:label       "note"@en ;
     sh:name          "note"@en ;
@@ -300,7 +291,7 @@ omg_ps:note
     sh:nodeKind      sh:Literal ;
     sh:path          skos:note .
 
-omg_ps:prefLabel
+beo_ps:prefLabel
     a                sh:PropertyShape ;
     rdfs:label       "voorkeurslabel"@en ;
     sh:name          "voorkeurslabel"@en ;
@@ -313,7 +304,7 @@ omg_ps:prefLabel
     sh:nodeKind      sh:Literal ;
     sh:path          skos:prefLabel .
 
-omg_ps:dc_identifier
+beo_ps:dc_identifier
     a                sh:PropertyShape ;
     rdfs:label       "identifier"@en ;
     sh:name          "identifier"@en ;
@@ -325,7 +316,7 @@ omg_ps:dc_identifier
     sh:path          dc:identifier .
 
 
-omg_ps:conceptscheme_prefLabel
+beo_ps:conceptscheme_prefLabel
     a                sh:PropertyShape ;
     rdfs:label       "voorkeurslabel"@en ;
     sh:name          "voorkeurslabel"@en ;
@@ -339,7 +330,7 @@ omg_ps:conceptscheme_prefLabel
     sh:nodeKind      sh:Literal ;
     sh:path          skos:prefLabel .
 
-omg_ps:inScheme
+beo_ps:inScheme
     a                sh:PropertyShape ;
     rdfs:label       "is in schema"@en ;
     sh:name          "is in schema"@en ;

@@ -58,74 +58,87 @@
 @prefix water-gop: <https://emis.vito.be/nl/erkende-laboratoria/water-gop/>.
 @prefix bodem-afvalstoffen-ovam: <https://emis.vito.be/nl/erkende-laboratoria/bodem-en-afvalstoffen-ovam/>.
 
-collectie:fossielaard dc:identifier "be.vlaanderen.bodemenondergrond.data.id.collection.fossielaard.fossielaard";
-    a skos:Collection;
-    skos:inScheme conceptscheme:fossielaard;
-    skos:member concept:brakwaterfauna, concept:brakwaterichnofossiel, concept:fauna, concept:flora, concept:ichnofossiel, concept:marienefauna, concept:marienichnofossiel, concept:onbepaald, concept:zoetwaterfauna, concept:zoetwaterichnofossiel;
-    skos:prefLabel "Collectie van fossielaard."@nl.
 concept:brakwaterfauna dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterfauna";
     a skos:Concept;
+    skos:definition "Fossiel van dierlijke oorsprong uit een brakwateromgeving (bv. estuarium)."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "brakwaterfauna";
+    skos:note "Fossiel van dierlijke oorsprong uit een brakwateromgeving (bv. estuarium)."@nl;
     skos:prefLabel "brakwaterfauna"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:brakwaterichnofossiel dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.brakwaterichnofossiel";
     a skos:Concept;
+    skos:definition "Sporenfossiel uit een brakwateromgeving."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "brakwaterichnofossiel";
+    skos:note "Sporenfossiel uit een brakwateromgeving."@nl;
     skos:prefLabel "brakwaterichnofossiel"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:fauna dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.fauna";
     a skos:Concept;
+    skos:definition "Fossiel van dierlijke oorsprong."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "fauna";
+    skos:note "Fossiel van dierlijke oorsprong."@nl;
     skos:prefLabel "fauna"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:flora dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.flora";
     a skos:Concept;
+    skos:definition "Fossiel van plantaardige oorsprong."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "flora";
+    skos:note "Fossiel van plantaardige oorsprong."@nl;
     skos:prefLabel "flora"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:ichnofossiel dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.ichnofossiel";
     a skos:Concept;
+    skos:definition "Sporenfossiel."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "ichnofossiel";
+    skos:note "Sporenfossiel."@nl;
     skos:prefLabel "ichnofossiel"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:marienefauna dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienefauna";
     a skos:Concept;
+    skos:definition "Fossiel van dierlijke oorsprong uit een mariene omgeving."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "marienefauna";
+    skos:note "Fossiel van dierlijke oorsprong uit een mariene omgeving."@nl;
     skos:prefLabel "mariene fauna"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:marienichnofossiel dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.marienichnofossiel";
     a skos:Concept;
+    skos:definition "Sporenfossiel uit een mariene omgeving."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "marienichnofossiel";
+    skos:note "Sporenfossiel uit een mariene omgeving."@nl;
     skos:prefLabel "marien ichnofossiel"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:onbepaald dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.onbepaald";
     a skos:Concept;
+    skos:definition "Fossiel van onbepaalde oorsprong."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "onbepaald";
+    skos:note "Fossiel van onbepaalde oorsprong."@nl;
     skos:prefLabel "onbepaald"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:zoetwaterfauna dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterfauna";
     a skos:Concept;
+    skos:definition "Fossiel van dierlijke oorsprong uit een zoetwateromgeving."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "zoetwaterfauna";
+    skos:note "Fossiel van dierlijke oorsprong uit een zoetwateromgeving."@nl;
     skos:prefLabel "zoetwaterfauna"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 concept:zoetwaterichnofossiel dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.fossielaard.zoetwaterichnofossiel";
     a skos:Concept;
+    skos:definition "Sporenfossiel uit een zoetwateromgeving."@nl;
     skos:inScheme conceptscheme:fossielaard;
     skos:notation "zoetwaterichnofossiel";
+    skos:note "Sporenfossiel uit een zoetwateromgeving."@nl;
     skos:prefLabel "zoetwaterichnofossiel"@nl;
     skos:topConceptOf conceptscheme:fossielaard.
 conceptscheme:fossielaard dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard";
     a skos:ConceptScheme;
-    skos:definition "Indicatie van fossielaard."@nl;
     skos:hasTopConcept concept:brakwaterfauna, concept:brakwaterichnofossiel, concept:fauna, concept:flora, concept:ichnofossiel, concept:marienefauna, concept:marienichnofossiel, concept:onbepaald, concept:zoetwaterfauna, concept:zoetwaterichnofossiel;
-    skos:note "Indicatie van fossielaard."@nl;
-    skos:prefLabel "Codelijst fossielaard."@nl.
+    skos:prefLabel "lijst met soorten fossielen"@nl.

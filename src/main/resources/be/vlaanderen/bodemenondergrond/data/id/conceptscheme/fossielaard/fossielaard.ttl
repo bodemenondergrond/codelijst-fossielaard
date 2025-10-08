@@ -140,5 +140,7 @@ concept:zoetwaterichnofossiel dc:identifier "be.vlaanderen.bodemenondergrond.dat
     skos:topConceptOf conceptscheme:fossielaard.
 conceptscheme:fossielaard dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard";
     a skos:ConceptScheme;
+    skos:definition "Indicatie van fossielaard."@nl;
     skos:hasTopConcept concept:brakwaterfauna, concept:brakwaterichnofossiel, concept:fauna, concept:flora, concept:ichnofossiel, concept:marienefauna, concept:marienichnofossiel, concept:onbepaald, concept:zoetwaterfauna, concept:zoetwaterichnofossiel;
-    skos:prefLabel "lijst met soorten fossielen"@nl.
+    skos:note "Indicatie van fossielaard."@nl;
+    skos:prefLabel "Codelijst fossielaard"@nl.

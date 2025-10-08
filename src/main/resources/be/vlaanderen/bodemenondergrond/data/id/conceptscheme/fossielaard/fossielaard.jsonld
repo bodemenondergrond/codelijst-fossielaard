@@ -504,6 +504,7 @@
             "id": "conceptscheme:fossielaard",
             "type": "skos:ConceptScheme",
             "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard",
+            "definition": "Indicatie van fossielaard.",
             "hasTopConcept": [
                 "concept:brakwaterfauna",
                 "concept:brakwaterichnofossiel",
@@ -516,7 +517,8 @@
                 "concept:zoetwaterfauna",
                 "concept:zoetwaterichnofossiel"
             ],
-            "prefLabel": "lijst met soorten fossielen"
+            "note": "Indicatie van fossielaard.",
+            "prefLabel": "Codelijst fossielaard"
         }
     ]
 }

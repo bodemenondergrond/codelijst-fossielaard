@@ -80,6 +80,7 @@
 <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/zoetwaterichnofossiel> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://purl.org/dc/elements/1.1/identifier> "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.fossielaard" .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#definition> "Indicatie van fossielaard."@nl .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/brakwaterfauna> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/brakwaterichnofossiel> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/fauna> .
@@ -90,4 +91,5 @@
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/onbepaald> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/zoetwaterfauna> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.bodemenondergrond.vlaanderen.be/id/concept/fossielaard/zoetwaterichnofossiel> .
-<https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#prefLabel> "lijst met soorten fossielen"@nl .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#note> "Indicatie van fossielaard."@nl .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/fossielaard> <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst fossielaard"@nl .

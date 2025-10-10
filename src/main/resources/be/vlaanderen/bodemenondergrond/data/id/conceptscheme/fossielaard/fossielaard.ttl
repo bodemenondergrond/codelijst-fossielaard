@@ -4,7 +4,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix assettype: <http://purl.org/adms/assettype/>.
 @prefix bodembescherming-gop: <https://emis.vito.be/nl/erkende-laboratoria/bodembescherming-gop/>.
-@prefix conceptscheme: <https://data.omgeving.vlaanderen.be/id/conceptscheme/>.
+@prefix conceptscheme: <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/>.
 @prefix country: <http://publications.europa.eu/resource/authority/country/>.
 @prefix datasets: <https://datasets.omgeving.vlaanderen.be/>.
 @prefix datatheme_be: <http://vocab.belgif.be/auth/datatheme/>.
@@ -23,8 +23,8 @@
 @prefix licence: <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/>.
 @prefix metadata: <https://data.omgeving.vlaanderen.be/ns/metadata#>.
 @prefix mest-bodem-veevoeder: <https://emis.vito.be/nl/erkende-laboratoria/mest-bodem-en-veevoeder-vlm/>.
-@prefix omg_catalog: <https://data.omgeving.vlaanderen.be/id/catalog/>.
-@prefix omg_catalog_doc: <https://data.omgeving.vlaanderen.be/doc/catalog/>.
+@prefix omg_catalog: <https://data.bodemenondergrond.vlaanderen.be/id/catalog/>.
+@prefix omg_catalog_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/catalog/>.
 @prefix omg_collection: <https://data.bodemenondergrond.vlaanderen.be/id/collection/>.
 @prefix omg_dataservice: <https://data.bodemenondergrond.vlaanderen.be/id/dataservice/>.
 @prefix omg_dataset_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/dataset/>.
